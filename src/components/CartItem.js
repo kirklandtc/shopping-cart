@@ -1,0 +1,17 @@
+import React from 'react'
+
+const CartItem = (props) => {
+
+  return(
+
+    <div class="list-group-item">
+      <div class="row">
+        <div class="col-md-8">(props.name)</div>
+        <div class="col-md-2">${(props.priceInCents/100).toFixed(2)}</div>
+        <div class="col-md-2">1</div>
+      </div>
+    </div>
+
+  )
+}
+export default CartItem
