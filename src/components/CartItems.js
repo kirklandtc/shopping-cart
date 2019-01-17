@@ -20,6 +20,7 @@ const CartItems = (props) => {
           quantity={item.quantity}
         />)}
       </div>
+    {  /* <p>Total: {itemsTotal}</p> */ }
     </div>
   )
 }

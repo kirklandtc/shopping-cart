@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 
 class AddItem extends Component {
   state = {
-    // Added product block below from the App component??
+    // Added product block below from the App component
     products: [
       { id: 40, name: 'Mediocre Iron Watch', priceInCents: 399 },
       { id: 41, name: 'Heavy Duty Concrete Plate', priceInCents: 499 },
@@ -15,7 +15,7 @@ class AddItem extends Component {
       { id: 47, name: 'Ergonomic Bronze Lamp', priceInCents: 40000 },
       { id: 48, name: 'Awesome Leather Shoes', priceInCents: 3990 },
     ],
-// Added product block above from the App component??
+// Added product block above from the App component
     quantity: 0,
     productId: 40
   }
@@ -28,6 +28,8 @@ class AddItem extends Component {
   }
   render() {
     return (
+
+
       <form className="container" onSubmit={this.onSubmit}>
         <div className="form-group">
           <label htmlFor="quantity">Quantity</label>

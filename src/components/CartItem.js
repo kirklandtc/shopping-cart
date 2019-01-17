@@ -1,9 +1,13 @@
 import React from 'react'
-
+ { /* import CartItems from './CartItems' */ }
 
 //added import CartItem from './CartItem' above?
 
 const CartItem = (props) => {
+
+
+    { /* function priceInCents(amt) {
+      return '$' + amt/100 */}
 
   return(
 
