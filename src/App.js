@@ -25,7 +25,7 @@ class App extends Component {
   }
 
   addItemToState = (quantity,productId)=> {
-    let productToAdd = this.state.products.find(product => product.id == productId)
+    let productToAdd = this.state.products.find(product => product.id === productId)
     let newItem = {
       id: this.state.cartItemsList.length + 1,
       product: productToAdd,
