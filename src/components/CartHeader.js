@@ -4,7 +4,7 @@ const CartHeader = (props) => {
 
   return(
 
-    <nav className="navbar navbar-dark bg-primary">
+    <nav className="navbar navbar-light bg-primary">
       <a className="navbar-brand" href="#">Shopping Cart</a>
     </nav>
 

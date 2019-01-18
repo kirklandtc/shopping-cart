@@ -1,6 +1,22 @@
 import React from 'react'
 import CartItem from './CartItem'
 
+// {/* {(props.cartItemsList) => (
+//   priceInCents
+// )
+//
+// list.reduce((sum, i) =>
+//   sum += i.count * i.priceInCents ), 0)
+// } */}
+
+const itemsTotal = (list) => {
+  let total = list.reduce((sum, i) =>{
+    sum += (i.product.priceInCents * i.quantity)/100
+    return sum
+  },0).toFixed(2)
+  return `$${total}`
+}
+
 const CartItems = (props) => {
   return (
     <div className="container">
@@ -20,9 +36,9 @@ const CartItems = (props) => {
           quantity={item.quantity}
         />)}
       </div>
-    {  /* <p>Total: {itemsTotal}</p> */ }
+      <p>Total: {itemsTotal(props.cartItemsList)}</p>
     </div>
-  )
-}
+
+)}
 
 export default CartItems
